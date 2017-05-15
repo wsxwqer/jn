@@ -1,0 +1,459 @@
+
+html, body {
+	width:100%;
+	height:100%;
+	max-width:1920px;
+	max-height:100%;
+	min-width:320px;
+	padding:0px;
+	margin:0px;
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: GothaProBla;
+  src: url(/jn/font/GothaProBla.otf) format("opentype");
+}
+@font-face {
+  font-family: GothaProLig;
+  src: url(/jn/font/GothaProLig.otf) format("opentype");
+}
+@font-face {
+  font-family: GothaProMed;
+  src: url(/jn/font/GothaProMed.otf) format("opentype");
+}
+
+
+@font-face {
+  font-family: GothaProBlaIta;
+  src: url(/jn/font/GothaProBlaIta.otf) format("opentype");
+}
+@font-face {
+  font-family: GothaProIta;
+  src: url(/jn/font/GothaProIta.otf) format("opentype");
+}
+@font-face {
+  font-family: GothaProLigIta;
+  src: url(/jn/font/GothaProLigIta.otf) format("opentype");
+}
+
+@font-face {
+  font-family: GothaProMedIta;
+  src: url(/jn/font/GothaProMedIta.otf) format("opentype");
+}
+
+@font-face {
+  font-family: GothaProBolIta;
+  src: url(/jn/font/GothaProBolIta.otf) format("opentype");
+}
+@font-face {
+  font-family: GothaProBol;
+  src: url(/jn/font/GothaProBol.otf) format("opentype");
+}
+@font-face {
+  font-family: GothaProNarBol;
+  src: url(/jn/font/GothaProNarBol.otf) format("opentype");
+}
+@font-face {
+  font-family: GothaProNarMed;
+  src: url(/jn/font/GothaProNarMed.otf) format("opentype");
+}
+@font-face {
+  font-family: GothaProReg;
+  src: url(/jn/font/GothaProReg.otf) format("opentype");
+}
+
+/*
+GothaProBla
+GothaProLig
+GothaProMed
+*/
+
+.back768 {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 768px;
+	border-bottom:1px solid #dadada;
+	margin: auto;
+}
+
+div.menuground {
+	box-sizing: border-box;
+	width:100%;
+	height:75px;
+	border-bottom:1px solid #dadada;
+}
+div.menu {
+	box-sizing: border-box;
+	display: table;
+	width: 80%;
+	height: 100%;
+	margin: auto;
+}
+
+div.menu > ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: table-row;
+	width: 100%;
+	height: 100%;
+}
+
+div.menu > ul > li {
+	list-style: none;
+	display: table-cell;
+	width:25%;
+	height: 100%;
+	border:0px solid silver;
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+}
+
+div.menu > ul > li > input {
+	display: none;
+}
+
+div.menu > ul > li > label {
+	cursor: pointer;
+	display: block;
+	border:0px solid #dadada;
+	position: relative;
+	width:100%;
+}
+
+div.menu > ul > li > input:checked + label {
+	color: #43649d;
+}
+
+div.menu > ul > li > label {
+	text-decoration: none;
+	font-family: GothaProReg, serif, dejavu serif !important; 
+	color:#0027ff;
+}
+
+@media only screen and (max-width:420px) {
+	div.menu > ul > li {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 3px 0 0 0;
+	}
+}
+
+.icon, .icon-1, .icon-2, .icon-3 {
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	margin: 35px auto 0 auto;
+	background-size: 100%;
+	background-position: 50%;
+	opacity: 0.5;
+}
+
+.icon {
+	background-image: url(/jn/icon.png);
+}
+
+.icon-1 {
+	background-image: url(/jn/icon-1.png);
+}
+
+.icon-2 {
+	background-image: url(/jn/icon-2.png);
+}
+
+.icon-3 {
+	background-image: url(/jn/icon-3.png);
+}
+
+
+
+.ank {
+	text-align: center;
+	font-size: 60px;
+	font-family: GothaProLig, serif, dejavu serif !important; 
+	padding:65px 0 0px 0;
+	border:0px solid silver;
+}
+
+div.personalinfo {
+	box-sizing: border-box;
+	width:80%;
+	margin: 25px auto 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+span.personalinfo {
+	display: block;
+	font-family: GothaProReg, serif, dejavu serif !important; 
+}
+
+input.init, input.skype, input.email, label.select {
+	box-sizing: border-box;
+	width: 60%;
+	text-align: center;
+	border: 0px solid white;
+	background-color: #dadada;
+	padding: 10px;
+	border-radius: 3px;
+	margin: 30px auto 0 auto;
+	color: gray;
+}
+
+
+input.skype, input.email {
+	margin: 10px auto 0 auto;
+}
+
+input.select {
+	display: none;
+}
+
+
+
+label.select {
+	width: 45%;
+	display: inline-block;
+	color: #aaafbd;
+	border:1px solid #dadada;
+}
+
+ul.select {
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	left: 0px;
+	right:0px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 45%;
+	border: 1px solid white;
+	border-radius: 3px;
+	background-color: white;
+	display: none;
+	max-height: 175px;
+	overflow: hidden;
+	overflow-y: auto;
+	color: #aaafbd;
+}
+
+ul.class > li {
+	list-style: none;
+	display: block;
+	width:100%;
+	height: 100%;
+	border:1px solid silver;
+	text-align: center;
+	position: relative;
+}
+
+input.cityinfo {
+	font-family: GothaProReg, serif, dejavu serif !important;
+	text-align: center;
+	color: gray;
+	width:100%;
+	border: 0px solid silver;
+	box-sizing: border-box;
+	padding: 10px 0 10px 0;
+}
+
+div.cityinfo {
+	font-family: GothaProReg, serif, dejavu serif !important;
+	text-align: center;
+
+	box-sizing: border-box;
+	width: 80%;
+	margin: 16px auto 0 auto;
+}
+
+div.cityinfo:before {
+	visibility: hidden;
+	font-size: 10px;
+	color: gray;
+	content: attr(before);
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+div.about{
+	box-sizing: border-box;
+	width: 80%;
+	margin: 25px auto 0 auto;
+	text-align: center;
+}
+
+span.about {
+	display: block;
+	font-family: GothaProReg, serif, dejavu serif !important;
+}
+
+div.about-block {
+	box-sizing: border-box;
+	width: 30%;
+	display: inline-block;
+	margin: 25px auto;
+	border: 0px solid silver;
+}
+
+div.about-content {
+	text-align: left;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 10px 0 0px 0;
+}
+
+div.about-content > input {
+	display: none;
+}
+
+label.about {
+	display: inline-block;
+	width:15px;
+	height:15px;
+	box-sizing: border-box;
+	border: 0px solid silver;
+	border-radius: 3px;
+	background-size: 100%;
+	background-position: 50%;
+	background-color: #e1e8f8;
+	margin: 0 3px 0 3px;
+}
+
+div.about-content > input:checked + label.about{
+	background-color: #345996;
+	background-image: url(/jn/check.png);
+}
+
+@media only screen and (max-width:480px) {
+	div.about-block {
+		width: 100%;
+	}
+}
+
+div.js {
+	box-sizing: border-box;
+	width: 80%;
+	margin: 25px auto 0 auto;
+	text-align: center;
+	border: 0px solid silver;
+}
+
+span.js {
+	display: block;
+	font-family: GothaProReg, serif, dejavu serif !important;
+}
+
+div.js-block {
+	box-sizing: border-box;
+	width: 25%;
+	display: inline-block;
+	margin: 25px -3px 0px -3px;
+	border: 0px solid silver;
+	cursor: pointer;
+}
+
+div.js-content {
+	text-align: left;
+	font-size: 12px;
+	margin: 10px 0 0px 0;
+	background-color: white;
+	position: relative;
+	z-index:1;
+	cursor: pointer;
+}
+
+div.js-block > label {
+/*
+
+*/
+}
+
+div.fill {
+	box-sizing: border-box;
+	width: 100%;
+	height:50px;
+	text-align: center;
+	border: 1px solid white;
+
+	background-color: white;
+	background-size: 100%;
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(/jn/fill.svg);
+}
+
+div.fill > label {
+	transition: visibility 0.3s;
+	box-sizing: border-box;
+	width: 25%;
+	height: 25px;
+	display: inline-block;
+	margin: 25px -3px 0px -3px;
+	border: 1px solid white;
+	background-color: white;
+	cursor: pointer;
+	visibility: visible;
+}
+
+div.fill > label:nth-child(1) {
+	visibility: hidden;
+}
+
+@media only screen and (max-width:480px) {
+	div.js-block {
+		width: 100%;
+	}
+}
+
+div.a-info {
+	box-sizing: border-box;
+	width: 80%;
+	margin: 25px auto 0 auto;
+	text-align: center;
+	border: 0px solid silver;
+}
+
+span.a-info {
+	display: block;
+	font-family: GothaProReg, serif, dejavu serif !important;
+}
+
+span.ques-info {
+	margin: 10px 0 0 0;
+	display: block;
+	font-size: 14px;
+	font-family: GothaProReg, serif, dejavu serif !important;
+}
+
+textarea.a-info {
+    box-sizing: border-box;
+    width: 60%;
+		height: 125px;
+    text-align: left;
+    border: 0px solid white;
+    background-color: #dadada;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 30px auto 0 auto;
+    color: gray;
+}
+
+div.a-info > input {
+		display: block;
+		margin: 35px auto 35px auto;
+		width: 85px;
+		height: 35px;
+    border: 0px solid white;
+		border-radius: 3px;
+    background-color: #345996;
+		color: #dadfe9;
+    padding: 10px;
+		font-family: GothaProReg, serif, dejavu serif !important;
+}
+
