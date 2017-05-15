@@ -395,7 +395,7 @@ div.fill > label {
 	width: 25%;
 	height: 25px;
 	display: inline-block;
-	margin: 25px -3px 0px -3px;
+	margin: 25px -3px 0px -2px;
 	border: 1px solid white;
 	background-color: white;
 	cursor: pointer;
